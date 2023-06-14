@@ -1,3 +1,5 @@
+//https://vid.puffyan.us/watch?v=TlP5WIxVirU
+
 const userCardTemplate = document.querySelector("[docListing]") //template
 const userCardContainer = document.querySelector("[docContainer]") //container of the doc objects
 const searchInput = document.querySelector("[searchBar]")
@@ -18,9 +20,24 @@ fetch("pages.json")
 			const date = card.querySelector("[docDate]")
 			const tags = card.querySelector("[docTags]")
 			
-			status.textContent = user.completion
+			var color = "color:#FFFFFF";
+			var text = "Error: Completion attribute is invalid.";
+			if (user.completion == "complete") { color = "color:#00FF00"; text = "This page is complete."; }
+			else if (user.completion == "incomplete") { color = "color:#FFFF00"; text = "This page is incomplete."; }
+			else if (user.completion == "gone") { color = "color:#FF0000"; text = "This page has not been created yet."; }
+			
+			var difficultyColor = "color:#FFFFFF";
+			if (user.difficulty == "easy") { color = "color:#009900"; }
+			else if (user.difficulty == "normal") { color = "color:#99FF33"; }
+			else if (user.difficulty == "hard") { color = "color:#FFFF00"; }
+			else if (user.difficulty == "very hard") { color = "color:#FF6600"; }
+			else if (user.difficulty == "brutal") { color = "color:#FF0000"; }
+			
+			status.setAttribute("style", color)
+			status.setAttribute("title", text)
 			title.textContent = user.title
 			difficulty.textContent = user.difficulty
+			difficulty.setAttribute("style", difficultyColor)
 			catagory.textContent = user.catagory
 			date.textContent = user.date
 			tags.textContent = user.tags

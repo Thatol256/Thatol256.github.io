@@ -29,12 +29,15 @@ body {
 
 /* doc container in template */
 .documentLabel {
-	border: 1px solid black;
-	background-color: white;
+	border: 3px solid white;
+	background-color: black;
 	padding: .5rem;
 }
 
-.card > .header {margin-bottom: .25rem;}
-.card > .body {font-size: .8rem; color: #777;}
+.documentLabel > .title {
+	margin-bottom: .25rem;
+	font-size: 24px;
+	font-weight: 5px;
+}
 
 .hide {display: none;}
