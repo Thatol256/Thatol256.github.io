@@ -41,10 +41,41 @@ body {
 	padding: .5rem;
 }
 
-.documentLabel > .title {
+.flexContainer {
+	display: grid;
+	grid-template-columns: 15px auto max-content max-content max-content;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.documentLabel > .flexContainer > .status {
+	text-align: left;
+	margin-bottom: .25rem;
+}
+
+.documentLabel > .flexContainer > .title {
+	text-align: left;
 	margin-bottom: .25rem;
 	font-size: 24px;
 	font-weight: 5px;
+}
+
+.documentLabel > .flexContainer > .difficulty {
+	text-align: right;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.documentLabel > .flexContainer > .catagory {
+	text-align: right;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.documentLabel > .flexContainer > .date {
+	text-align: right;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .hide {display: none;}
