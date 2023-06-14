@@ -36,6 +36,7 @@ fetch("pages.json")
 			status.setAttribute("id", color)
 			status.setAttribute("title", text)
 			title.textContent = user.title
+			title.setAttribute("href", user.ref)
 			difficulty.textContent = user.difficulty
 			difficulty.setAttribute("id", difficultyColor)
 			catagory.textContent = user.catagory

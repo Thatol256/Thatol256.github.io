@@ -1,11 +1,11 @@
 [
 	{
-		"title":"Title",
-		"ref":"file.html",
+		"title":"Fourier Transform",
+		"ref":"content\\doc.pdf",
 		"date":"Jun. 13, 2023",
-		"tags":["Tech","Math","Computers"],
-		"catagory":"Math",
-		"difficulty":"Easy",
-		"completion":"Gone"
+		"tags":["Math","Signal processing","Frequency"],
+		"catagory":"Document (PDF)",
+		"difficulty":"Very hard",
+		"completion":"Incomplete"
 	}
 ]
