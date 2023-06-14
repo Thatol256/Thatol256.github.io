@@ -1,11 +1,11 @@
 [
 	{
 		"title":"Fourier Transform",
-		"ref":"content\\doc.pdf",
+		"ref":"",
 		"date":"Jun. 13, 2023",
 		"tags":["Math","Signal processing","Frequency"],
 		"catagory":"Document (PDF)",
 		"difficulty":"Very hard",
-		"completion":"Incomplete"
-	}
+		"completion":"Gone"
+	},
 ]
