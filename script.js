@@ -1,5 +1,3 @@
-//https://vid.puffyan.us/watch?v=TlP5WIxVirU
-
 const userCardTemplate = document.querySelector("[docListing]") //template
 const userCardContainer = document.querySelector("[docContainer]") //container of the doc objects
 const searchInput = document.querySelector("[searchBar]")
@@ -39,9 +37,11 @@ fetch("pages.json")
 			
 			var color = "white";
 			var text = "Error: Completion attribute is invalid.";
-			if (user.completion == "Complete") { color = "green"; text = "This page is complete."; }
-			else if (user.completion == "Incomplete") { color = "yellow"; text = "This page is incomplete."; }
+			if (user.completion == "Complete") { color = "green"; text = "This page is complete."; } //complete, not active
+			else if (user.completion == "Incomplete") { color = "yellow"; text = "This page is incomplete, but is still being worked on."; } //incomplete, active
 			else if (user.completion == "Gone") { color = "red"; text = "This page has not been created yet."; }
+			else if (user.completion == "Abandoned") { color = "orange"; text = "This page has been abandoned in an incomplete state."; } //incomplete, not active
+			else if (user.completion == "Ongoing") { color = "lime"; text = "This page is of a complete project that is still being worked on."; } //complete, active
 			
 			var difficultyColor = "white";
 			if (user.difficulty == "Easy") { difficultyColor = "green"; }

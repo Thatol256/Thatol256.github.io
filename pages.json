@@ -1,11 +1,11 @@
 [
 	{
-		"title":"Fourier Transform",
-		"ref":"",
-		"date":"Jun. 13, 2023",
-		"tags":["Math","Signal processing","Frequency"],
-		"catagory":"Document (PDF)",
-		"difficulty":"Very hard",
-		"completion":"Gone"
+		"title":"3D Modeler",
+		"ref":"content\\3dmodeler.html",
+		"date":"Jun. 14, 2023",
+		"tags":["Programming","Python","3D","Modeler"],
+		"catagory":"Project",
+		"difficulty":"Hard",
+		"completion":"Abandoned"
 	}
 ]
