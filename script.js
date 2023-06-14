@@ -22,9 +22,9 @@ fetch("pages.json")
 			
 			var color = "color:#FFFFFF";
 			var text = "Error: Completion attribute is invalid.";
-			if (user.completion == "complete") { color = "color:#00FF00"; text = "This page is complete."; }
-			else if (user.completion == "incomplete") { color = "color:#FFFF00"; text = "This page is incomplete."; }
-			else if (user.completion == "gone") { color = "color:#FF0000"; text = "This page has not been created yet."; }
+			if (user.completion == "Complete") { color = "color:#00FF00"; text = "This page is complete."; }
+			else if (user.completion == "Incomplete") { color = "color:#FFFF00"; text = "This page is incomplete."; }
+			else if (user.completion == "Gone") { color = "color:#FF0000"; text = "This page has not been created yet."; }
 			
 			var difficultyColor = "color:#FFFFFF";
 			if (user.difficulty == "Easy") { color = "color:#009900"; }
