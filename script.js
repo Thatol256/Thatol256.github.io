@@ -44,6 +44,6 @@ fetch("pages.json")
 			tags.textContent = user.tags
 			
 			userCardContainer.append(card)
-			return { completion:user.completion, title:user.title, difficulty:user.difficulty, catagory:user.catagory, date:user.date, tags:user.tags, element:card }
+			return { ref:user.ref, completion:user.completion, title:user.title, difficulty:user.difficulty, catagory:user.catagory, date:user.date, tags:user.tags, element:card }
 		})
 	})
