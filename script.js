@@ -9,12 +9,16 @@ let users = []
 searchInput.addEventListener("input", e => {
 	const value = e.target.value.toLowerCase()
 	users.forEach(user => {
-		const isVisible =
+		var isVisible =
 			user.title.toLowerCase().includes(value) ||
 			user.difficulty.toLowerCase().includes(value) ||
 			user.catagory.toLowerCase().includes(value) ||
-			user.date.toLowerCase().includes(value) ||
-			user.tags.toLowerCase().includes(value)
+			user.date.toLowerCase().includes(value)
+		user.tags.forEach(tag => {
+			if (tag.toLowerCase().includes(value)) {
+				isVisible = true;
+			}
+		})
 		user.element.classList.toggle("hide", !isVisible)
 	})
 })
