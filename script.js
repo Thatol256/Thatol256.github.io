@@ -20,24 +20,24 @@ fetch("pages.json")
 			const date = card.querySelector("[docDate]")
 			const tags = card.querySelector("[docTags]")
 			
-			var color = "color:#FFFFFF";
+			var color = "white";
 			var text = "Error: Completion attribute is invalid.";
-			if (user.completion == "Complete") { color = "color:#00FF00"; text = "This page is complete."; }
-			else if (user.completion == "Incomplete") { color = "color:#FFFF00"; text = "This page is incomplete."; }
-			else if (user.completion == "Gone") { color = "color:#FF0000"; text = "This page has not been created yet."; }
+			if (user.completion == "Complete") { color = "green"; text = "This page is complete."; }
+			else if (user.completion == "Incomplete") { color = "yellow"; text = "This page is incomplete."; }
+			else if (user.completion == "Gone") { color = "red"; text = "This page has not been created yet."; }
 			
-			var difficultyColor = "color:#FFFFFF";
-			if (user.difficulty == "Easy") { color = "color:#009900"; }
-			else if (user.difficulty == "Normal") { color = "color:#99FF33"; }
-			else if (user.difficulty == "Hard") { color = "color:#FFFF00"; }
-			else if (user.difficulty == "Very hard") { color = "color:#FF6600"; }
-			else if (user.difficulty == "Brutal") { color = "color:#FF0000"; }
+			var difficultyColor = "white";
+			if (user.difficulty == "Easy") { color = "green"; }
+			else if (user.difficulty == "Normal") { color = "lime"; }
+			else if (user.difficulty == "Hard") { color = "yellow"; }
+			else if (user.difficulty == "Very hard") { color = "orange"; }
+			else if (user.difficulty == "Brutal") { color = "red"; }
 			
-			status.setAttribute("style", color)
+			status.setAttribute("id", color)
 			status.setAttribute("title", text)
 			title.textContent = user.title
 			difficulty.textContent = user.difficulty
-			difficulty.setAttribute("style", difficultyColor)
+			difficulty.setAttribute("id", difficultyColor)
 			catagory.textContent = user.catagory
 			date.textContent = user.date
 			tags.textContent = user.tags

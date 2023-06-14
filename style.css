@@ -19,6 +19,13 @@ body {
 	align-items: center;
 }
 
+#white {color:white;}
+#green {color:green;}
+#lime {color:lime;}
+#yellow {color:yellow;}
+#orange {color:orange;}
+#red {color:red;}
+
 /* container of the doc objects */
 .documentContainer {
 	display: grid;
