@@ -6,7 +6,7 @@ const searchInput = document.querySelector("[searchBar]")
 
 let users = []
 
-searchInput.addEventListener("[searchBar]", e => {
+searchInput.addEventListener("input", e => {
 	const value = e.target.value.toLowerCase()
 	users.forEach(user => {
 		const isVisible =
