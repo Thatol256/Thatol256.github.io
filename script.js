@@ -27,11 +27,11 @@ fetch("pages.json")
 			else if (user.completion == "gone") { color = "color:#FF0000"; text = "This page has not been created yet."; }
 			
 			var difficultyColor = "color:#FFFFFF";
-			if (user.difficulty == "easy") { color = "color:#009900"; }
-			else if (user.difficulty == "normal") { color = "color:#99FF33"; }
-			else if (user.difficulty == "hard") { color = "color:#FFFF00"; }
-			else if (user.difficulty == "very hard") { color = "color:#FF6600"; }
-			else if (user.difficulty == "brutal") { color = "color:#FF0000"; }
+			if (user.difficulty == "Easy") { color = "color:#009900"; }
+			else if (user.difficulty == "Normal") { color = "color:#99FF33"; }
+			else if (user.difficulty == "Hard") { color = "color:#FFFF00"; }
+			else if (user.difficulty == "Very hard") { color = "color:#FF6600"; }
+			else if (user.difficulty == "Brutal") { color = "color:#FF0000"; }
 			
 			status.setAttribute("style", color)
 			status.setAttribute("title", text)
