@@ -6,6 +6,19 @@ const searchInput = document.querySelector("[searchBar]")
 
 let users = []
 
+searchInput.addEventListener("[searchBar]", e => {
+	const value = e.target.value.toLowerCase()
+	users.forEach(user => {
+		const isVisible =
+			user.title.toLowerCase().includes(value) ||
+			user.difficulty.toLowerCase().includes(value) ||
+			user.catagory.toLowerCase().includes(value) ||
+			user.date.toLowerCase().includes(value) ||
+			user.tags.toLowerCase().includes(value)
+		user.element.classList.toggle("hide", !isVisible)
+	})
+})
+
 fetch("pages.json")
 	.then(res => res.json())
 	.then(data => {
