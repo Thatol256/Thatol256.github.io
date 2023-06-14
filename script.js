@@ -33,6 +33,9 @@ fetch("pages.json")
 			else if (user.difficulty == "Very hard") { difficultyColor = "orange"; }
 			else if (user.difficulty == "Brutal") { difficultyColor = "red"; }
 			
+			console.log(user.completion);
+			console.log(user.difficulty);
+			
 			status.setAttribute("id", color)
 			status.setAttribute("title", text)
 			title.textContent = user.title
