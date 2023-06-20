@@ -76,3 +76,7 @@ body {
 }
 
 .hide {display: none;}
+
+.centerText {
+	text-align: center;
+}

@@ -1,5 +1,14 @@
 [
 	{
+		"title":"Fourier Transform",
+		"ref":"content\\fouriertransform.html",
+		"date":"Jun. 19, 2023",
+		"tags":["Math","Calculus"],
+		"catagory":"Document",
+		"difficulty":"Hard",
+		"completion":"Incomplete"
+	},
+	{
 		"title":"3D Modeler",
 		"ref":"content\\3dmodeler.html",
 		"date":"Jun. 14, 2023",
