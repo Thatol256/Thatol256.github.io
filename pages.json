@@ -1,12 +1,25 @@
 [
 	{
+		"title":"SNES Programming",
+		"ref":"content\\snesprogramming.html",
+		"date":"Jul. 8, 2023",
+		"tags":["SNES","Programming","Low level programming","Assembly"],
+		"catagory":"Document",
+		"difficulty":"Brutal",
+		"completion":"Incomplete",
+		"dateMade":"",
+		"dateCompleted":""
+	},
+	{
 		"title":"Fourier Transform",
 		"ref":"content\\fouriertransform.html",
-		"date":"Jun. 19, 2023",
+		"date":"Jun. 20, 2023",
 		"tags":["Math","Calculus"],
 		"catagory":"Document",
 		"difficulty":"Very hard",
-		"completion":"Incomplete"
+		"completion":"Incomplete",
+		"dateMade":"Jun. 19, 2023",
+		"dateCompleted":""
 	},
 	{
 		"title":"3D Modeler",
@@ -15,6 +28,8 @@
 		"tags":["Programming","Python","3D","Modeler"],
 		"catagory":"Project",
 		"difficulty":"Hard",
-		"completion":"Abandoned"
+		"completion":"Abandoned",
+		"dateMade":"June 16, 2021",
+		"dateCompleted":"July 8, 2021"
 	}
 ]
