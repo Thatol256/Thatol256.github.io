@@ -1,18 +1,51 @@
 [
 	{
+		"title":"Python UNO",
+		"ref":"content\\uno\\main.html",
+		"date":"Dec. 6, 2023",
+		"tags":["Programming","Python","UNO","Game"],
+		"catagory":"Project",
+		"difficulty":"Easy",
+		"completion":"Ongoing",
+		"dateMade":"Nov. 13, 2023",
+		"dateCompleted":"Nov. 29, 2023"
+	},
+	{
+		"title":"Python Media Runner",
+		"ref":"./index.html",
+		"date":"Dec. 6, 2023",
+		"tags":["Programming","Python","Media","Player"],
+		"catagory":"Project",
+		"difficulty":"Normal",
+		"completion":"Gone",
+		"dateMade":"Nov. 14, 2022",
+		"dateCompleted":""
+	},
+	{
+		"title":"Introduction to Low-Level Programming",
+		"ref":"./index.html",
+		"date":"Dec. 6, 2023",
+		"tags":["Programming","Low level programming","Assembly"],
+		"catagory":"Document",
+		"difficulty":"Very hard",
+		"completion":"Gone",
+		"dateMade":"Sep. 26, 2023",
+		"dateCompleted":""
+	},
+	{
 		"title":"SNES Programming",
-		"ref":"content\\snesprogramming.html",
-		"date":"Jul. 8, 2023",
+		"ref":"content\\snesprogramming\\main.html",
+		"date":"Jul. 10, 2023",
 		"tags":["SNES","Programming","Low level programming","Assembly"],
 		"catagory":"Document",
 		"difficulty":"Brutal",
 		"completion":"Incomplete",
-		"dateMade":"",
+		"dateMade":"Jul. 8, 2023",
 		"dateCompleted":""
 	},
 	{
 		"title":"Fourier Transform",
-		"ref":"content\\fouriertransform.html",
+		"ref":"content\\fouriertransform\\main.html",
 		"date":"Jun. 20, 2023",
 		"tags":["Math","Calculus"],
 		"catagory":"Document",
@@ -23,7 +56,7 @@
 	},
 	{
 		"title":"3D Modeler",
-		"ref":"content\\3dmodeler.html",
+		"ref":"content\\3dmodeler\\main.html",
 		"date":"Jun. 14, 2023",
 		"tags":["Programming","Python","3D","Modeler"],
 		"catagory":"Project",
